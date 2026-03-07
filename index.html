@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Lonxz</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins;
+}
+
+body{
+height:100vh;
+background:linear-gradient(120deg,#ff3cac,#784ba0,#2b86c5);
+background-size:300% 300%;
+animation:bgmove 12s infinite alternate;
+color:white;
+}
+
+@keyframes bgmove{
+0%{background-position:left}
+100%{background-position:right}
+}
+
+.container{
+max-width:1000px;
+margin:auto;
+padding:50px;
+}
+
+.profile{
+text-align:center;
+margin-bottom:60px;
+}
+
+.avatar{
+width:140px;
+height:140px;
+border-radius:50%;
+border:4px solid rgba(255,255,255,0.4);
+box-shadow:0 0 30px rgba(255,255,255,0.4);
+margin-bottom:20px;
+}
+
+h1{
+font-size:42px;
+}
+
+.subtitle{
+opacity:0.8;
+margin-top:8px;
+}
+
+.section{
+margin-top:40px;
+}
+
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.card{
+background:rgba(255,255,255,0.1);
+backdrop-filter:blur(12px);
+padding:30px;
+border-radius:15px;
+transition:0.25s;
+text-align:center;
+}
+
+.card:hover{
+transform:translateY(-8px) scale(1.04);
+box-shadow:0 15px 40px rgba(0,0,0,0.4);
+}
+
+.button{
+display:inline-block;
+margin-top:15px;
+padding:10px 20px;
+border-radius:30px;
+background:linear-gradient(90deg,#ff3cac,#ff6ec7);
+text-decoration:none;
+color:white;
+transition:0.2s;
+}
+
+.button:hover{
+box-shadow:0 0 20px #ff6ec7;
+transform:scale(1.05);
+}
+
+.links{
+text-align:center;
+margin-top:40px;
+}
+
+.footer{
+text-align:center;
+margin-top:60px;
+opacity:0.6;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="profile">
+<img class="avatar" src="https://i.imgur.com/2DhmtJ4.png">
+<h1>Lonxz</h1>
+<p class="subtitle">Python Developer • Game Creator</p>
+</div>
+
+<div class="section">
+
+<h2 style="text-align:center;margin-bottom:25px;">Projects</h2>
+
+<div class="projects">
+
+<div class="card">
+<h3>Calculator</h3>
+<p>Simple web calculator.</p>
+<a class="button" href="https://calculatoreasymode.netlify.app/" target="_blank">Open</a>
+</div>
+
+<div class="card">
+<h3>Fusion Grid</h3>
+<p>2048-style Python game.</p>
+<a class="button" href="#">Play</a>
+</div>
+
+</div>
+
+</div>
+
+<div class="links">
+<a class="button" href="#">GitHub</a>
+</div>
+
+<div class="footer">
+© 2026 Losz Ender
+</div>
+
+</div>
+
+</body>
+</html>
